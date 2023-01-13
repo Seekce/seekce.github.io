@@ -4,18 +4,16 @@ div#chat {
 	overflow-y: auto;
 	display: flex;
 	flex-direction: column-reverse;
-	background-color: #FF0000;
+	background-color: #111416;
 }
 
-div#chat::webkit-scrollbar {
+div#chat::-webkit-scrollbar {
 	display: none;
 }
 
 div#chat li {
-	min-height: 50px;
 	background-color: #00FF00;
 	box-sizing: border-box;
-	padding: 5px 10px;
 	margin: 0.5em;
 }
 
@@ -28,12 +26,23 @@ div#chat ul {
 
 div.user {
 	background-color: #0000FF;
-	padding: 0;
-	margin: 0;
+    background-image: url(messageUserBox.png);
+    color: #E6EBE6;
+    height: 21px;
+    padding: 9px 0 0 9px;
+    margin: 0;
 }
 
 div.message {
 	background-color: #888888;
-	padding: 0;
-	margin: 0;
+    background-image: url(messageContentBox.png);
+    color: #e6ebe6;
+    min-height: 30px;
+    padding: 9px 12px 0 12px;
+    margin: 0;
+}
+
+div.bottomborder {
+	background-image: url(messageBottomBorder.png);
+	min-height: 8px;
 }
